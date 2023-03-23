@@ -11,7 +11,7 @@ import java.util.List;
 public class DriverService {
     @Autowired
     private DriverRepo repo;
-
+    private String s="sam";
     public Driver addDriver(Driver driver){
        return repo.saveAndFlush(driver);
        ////// saregamapa

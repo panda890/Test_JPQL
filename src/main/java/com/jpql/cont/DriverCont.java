@@ -15,6 +15,11 @@ public class DriverCont {
     @Autowired
     private DriverService service;
 
+     @GetMapping(value = "/msg")
+    public String showMsg(){
+        return "Test For Linux Machine..";
+    }
+
     @PostMapping(value = "/add")
     public Driver addDriver(@RequestBody Driver driver){
         return service.addDriver(driver);
